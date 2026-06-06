@@ -1581,7 +1581,135 @@ a:focus, button:focus, input:focus {
   margin-left: auto;
   margin-right: auto;
 }
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    padding: 100px 0 60px;
+    overflow-x: hidden;
+}
 
+.hero-title {
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    line-height: 1.1;
+    word-break: break-word;
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    line-height: 1.6;
+}
+
+/* Stats */
+.hero-stats {
+    margin-bottom: 2rem !important;
+}
+
+.stat-card {
+    padding: 15px 10px;
+    text-align: center;
+    height: 100%;
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .hero-section {
+        min-height: auto;
+        padding-top: 120px;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-stats .col-6 {
+        margin-bottom: 10px;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+    }
+
+    .hero-graphic {
+        margin-top: 40px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 576px) {
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-badge .badge {
+        font-size: 0.75rem;
+    }
+
+    .stat-number {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+}
+.game-card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-card-content .p-4 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.game-card-content .btn {
+    margin-top: auto;
+    width: 140px;
+    align-self: center;
+}
 @media (max-width: 1024px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
