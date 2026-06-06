@@ -1587,7 +1587,19 @@ a:focus, button:focus, input:focus {
     padding: 100px 0 60px;
     overflow-x: hidden;
 }
+.navbar {
+  height: 70px; /* force consistent height */
+}
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  padding-top: 70px; /* EXACT navbar height */
+  margin-top: 0;
+}
 .hero-title {
     font-size: clamp(2rem, 6vw, 4.5rem);
     line-height: 1.1;
