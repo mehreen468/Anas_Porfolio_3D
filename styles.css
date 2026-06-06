@@ -1589,9 +1589,7 @@ a:focus, button:focus, input:focus {
 }
 
 .navbar {
-  min-height: 70px;
-  padding: 10px 0;
-  height: auto;
+  height: 60px; /* force consistent height */
 }
 
 body {
