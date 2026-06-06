@@ -1587,8 +1587,11 @@ a:focus, button:focus, input:focus {
     padding: 100px 0 60px;
     overflow-x: hidden;
 }
+
 .navbar {
-  height: 70px; /* force consistent height */
+  min-height: 70px;
+  padding: 10px 0;
+  height: auto;
 }
 
 body {
